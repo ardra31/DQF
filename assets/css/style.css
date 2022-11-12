@@ -30,6 +30,8 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #393734;
 }
 
 /*--------------------------------------------------------------
@@ -173,12 +175,16 @@ h6 {
   transition: 0.3s;
   font-size: 14px;
   display: inline-block;
-  border: 2px solid #ffc451;
+  border: 2px solid #e8b144;
 }
 
 .get-started-btn:hover {
   background: #ffbb38;
   color: #343a40;
+}
+#tree-of-life{
+  margin-right:20px
+  
 }
 
 @media (max-width: 992px) {
@@ -186,6 +192,7 @@ h6 {
     padding: 7px 20px 8px 20px;
     margin-right: 15px;
   }
+ 
 }
 
 /*--------------------------------------------------------------
@@ -629,7 +636,9 @@ section {
 .features {
   padding-top: 20px;
 }
-
+.features .row{
+  padding: 10px;
+}
 .features .icon-box {
   padding-left: 15px;
 }
@@ -659,6 +668,27 @@ section {
   min-height: 400px;
 }
 
+@media (max-width: 992px) {
+  .features .image{
+    min-height: 300px;
+    padding: 2em;
+    background-size:100%;
+  }
+  .features .row{
+    padding: 5px;
+  }
+  .features .icon-box h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px 0 10px 20px;
+  }
+
+  .features .icon-box p {
+    font-size: 15px;
+    color: #848484;
+    margin-left: 20px;
+  }
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -716,6 +746,57 @@ section {
   transform: translateY(-10px);
 }
 
+.gallery .gallery-item {
+  overflow: hidden;
+  padding: 1.5em;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+.gallery .gallery-item img {
+  transition: all ease-in-out 0.4s;
+}
+
+.gallery .gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+ Clients Section
+--------------------------------*/
+
+#clients {
+  padding: 60px 0;
+}
+
+#clients img {
+  max-width: 80%;
+  opacity: 1;
+  transition: 0.3s;
+  padding: 15px 0;
+}
+
+#clients img:hover {
+  opacity: 1;
+}
+
+#clients .owl-nav, #clients .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+#clients .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+#clients .owl-dot.active {
+  background-color: #1bb1dc;
+}
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
@@ -951,7 +1032,7 @@ section {
 }
 
 .counts .content h3 {
-  font-weight: 700;
+  font-weight: 900;
   font-size: 34px;
   color: #151515;
 }
@@ -1256,10 +1337,10 @@ section {
   font-size: 14px;
   color: #484848;
 }
-
+.contact .info .address,
 .contact .info .email,
 .contact .info .phone {
-  margin-top: 40px;
+  margin: 1.5em;
 }
 
 .contact .php-email-form {
@@ -1368,6 +1449,43 @@ section {
 }
 
 /*--------------------------------------------------------------
+ Clients Section
+--------------------------------*/
+
+#clients {
+  padding: 60px 0;
+}
+
+#clients img {
+  max-width: 80%;
+  opacity: 1;
+  transition: 0.3s;
+  padding: 15px 0;
+}
+
+#clients img:hover {
+  opacity: 1;
+}
+
+#clients .owl-nav, #clients .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+#clients .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+#clients .owl-dot.active {
+  background-color: #1bb1dc;
+}
+
+/*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
@@ -1441,11 +1559,12 @@ section {
 
 #footer .footer-top .footer-info h3 {
   font-size: 28px;
-  margin: 0 0 20px 0;
+  margin: 0 0px 20px 50px;
   padding: 2px 0 2px 0;
   line-height: 1;
   font-weight: 700;
   text-transform: uppercase;
+  color: #efefef;
 }
 
 #footer .footer-top .footer-info h3 span {
@@ -1570,4 +1689,11 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+@media (max-width: 992px) {
+
+  #footer .footer-top .footer-info {
+    margin: 0em 0px 0em 95px;
+  }
 }
