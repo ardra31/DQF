@@ -4,9 +4,8 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-(function() {
-  "use strict";
-
+!(function($){
+"use strict";
   /**
    * Easy selector helper function
    */
@@ -39,6 +38,30 @@
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
   }
+
+ // Initiate venobox lightbox
+ $(document).ready(function() {
+  $('.venobox').venobox();
+});
+
+  // Clients carousel (uses the Owl Carousel library)
+  $(".clients-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    responsive: {
+      0: {
+        items: 2
+      },
+      768: {
+        items: 4
+      },
+      900: {
+        items: 6
+      }
+    }
+  });
+
 
   /**
    * Navbar links active state on scroll
@@ -289,4 +312,4 @@
    */
   new PureCounter();
 
-})()
+})(jQuery);
