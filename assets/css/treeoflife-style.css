@@ -640,6 +640,13 @@ body {
     min-height: 300px;
   }
   
+  .features .kites-india{
+    padding-top: 30px;
+  }
+
+  .features .content{
+    padding-left: 10px;
+  }
 
   /*--------------------------------------------------------------
 # About
