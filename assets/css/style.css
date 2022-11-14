@@ -361,6 +361,7 @@ h6 {
   background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
+  border-radius: 5px;
 }
 
 .navbar-mobile a,
